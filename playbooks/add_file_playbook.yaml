@@ -1,0 +1,1 @@
+# ansible-playbook ~/ansible/playbooks/add_file_playbook.yaml -i ~/ansible/inventory/hosts.ini
