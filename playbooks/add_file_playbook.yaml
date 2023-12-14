@@ -3,7 +3,7 @@
 - name: creat file on VM
   hosts: 192.168.56.106
   tasks:
-    - name: creat file example.txt
+    - name: creat_file_example.txt
       file:
         path: ~/primer/example.txt
         state: touch
