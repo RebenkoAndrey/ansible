@@ -3,6 +3,7 @@
 - name: creat file on VM
   hosts: 192.168.56.106
   remote_user: admin
+
   tasks:
     - name: creat_file_example.txt
       file:
