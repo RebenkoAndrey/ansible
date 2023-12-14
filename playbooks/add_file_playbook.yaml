@@ -1,11 +1,13 @@
 # ansible-playbook ~/ansible/playbooks/add_file_playbook.yaml -i ~/ansible/inventory/hosts.ini
 ---
-- name: creat_file_VM
+- name: creat_file_admin
   hosts: 192.168.56.106
-  remote_user: admin
+  become: true
+  become_user: admin
   tasks:
-    - name: example.txt
+    - name: Создать файл example.txt
       file:
-        path: /home/ansible/example.txt
+        path: home/ansible/example.txt
         state: touch
+
 
