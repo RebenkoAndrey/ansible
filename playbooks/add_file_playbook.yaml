@@ -5,5 +5,5 @@
   tasks:
     - name: creat_file_example.txt
       file:
-        path: ~//primer/example.txt
+        path: ~//ansible/example.txt
         state: touch
