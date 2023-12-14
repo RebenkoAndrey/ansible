@@ -1,1 +1,9 @@
 # ansible-playbook ~/ansible/playbooks/add_file_playbook.yaml -i ~/ansible/inventory/hosts.ini
+---
+- name: creat file on VM
+  hosts: 192.168.56.106
+  tasks:
+    - name: creat file example.txt
+      file:
+        path: ~/primer/example.txt
+        state: touch
