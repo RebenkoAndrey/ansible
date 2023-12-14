@@ -2,7 +2,6 @@
 ---
 - name: creat_file_admin
   hosts: 212.193.56.10
-  become: true
   become_user: admin
   tasks:
     - name: create_file_example.txt
