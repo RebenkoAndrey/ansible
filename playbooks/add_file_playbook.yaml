@@ -1,4 +1,13 @@
 # ansible-playbook ~/ansible/playbooks/add_file_playbook.yaml -i ~/ansible/inventory/hosts.ini
-
+---
+- name: creat_file_admin
+  hosts: all
+  become: yes
+  become_user: admin
+  tasks:
+    - name: create_file_example.txt
+      file:
+        path: /ansible/example.txt
+        state: touch
 
 
