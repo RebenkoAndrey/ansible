@@ -3,7 +3,7 @@
 - name: creat_file_admin
   hosts: all
   become: yes
-  become_user: admin
+  remote_user: admin
   tasks:
     - name: create_file_example.txt
       file:
