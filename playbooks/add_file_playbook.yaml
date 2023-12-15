@@ -7,7 +7,7 @@
   tasks:
     - name: create_file_example.txt
       file:
-        path: /ansible/example.txt
+        path: ~/ansible/example.txt
         state: touch
 
 
