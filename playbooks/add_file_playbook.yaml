@@ -2,7 +2,7 @@
 ---
 - name: creat_file_admin
   hosts: all
-  remote_user: admin
+  remote_user: developer
   tasks:
     - name: create_file_example.txt
       file:
