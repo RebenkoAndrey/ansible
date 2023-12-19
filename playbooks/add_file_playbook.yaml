@@ -2,12 +2,11 @@
 ---
 - name: creat_file_admin
   hosts: all
-  become: yes
   remote_user: admin
   tasks:
     - name: create_file_example.txt
       file:
-        path: ~/exampl.txt
+        path: "~/exampl.txt"
         state: touch
 
 
