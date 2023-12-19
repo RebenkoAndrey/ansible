@@ -1,1 +1,13 @@
 # ansible-playbook ~/ansible/playbooks/remove_file_playbook.yaml -i ~/ansible/inventory/hosts.ini
+
+---
+- name: remove_file_admin
+  hosts: all
+  remote_user: admin
+  tasks:
+    - name: remove_file_example.txt
+      file:
+        path: "~/exampl.txt"
+        state: absent
+
+
